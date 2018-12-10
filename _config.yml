@@ -44,3 +44,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+permalink: none
+
