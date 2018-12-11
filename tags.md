@@ -36,7 +36,7 @@ for c in tags               %}{%
     <ul>{%
       for post in posts     %}{%
         if post.tags contains d %}
-      <li><a class="link" href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span></li>{%
+      <li><a class="link" href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span></li>{%
         endif               %}{%
       endfor                %}
     </ul>

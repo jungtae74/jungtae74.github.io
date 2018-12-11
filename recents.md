@@ -17,7 +17,7 @@ permalink: /recents/
     endif                         %}
 <h3>{{ post.date | date: '%Y년 %m월' }}</h3><ul>{%
   endif %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
+  <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
     <ul class="tags post-tags cf">{%
       for tag in post.tags %}
       <li><a href="/tags/#{{ tag }}">{{ tag | downcase }}</a></li>{%
