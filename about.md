@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="https://avatars.githubusercontent.com/{{ site.github_username }}" width="80" style="border-radius: 6px; box-shadow: 3px 3px 2px gray;">
+<img src="https://avatars.githubusercontent.com/{{ site.github_username }}" width="120" style="border-radius: 6px; box-shadow: 3px 3px 2px gray;">
 
 안녕하세요. __김정태__ 입니다.
 
