@@ -49,8 +49,8 @@ tags: [html, css]
 
 ### HTML 레퍼런스
 
-* [Enter HTML5 structural elements](https://www.w3.org/wiki/HTML_structural_elements#Enter_HTML5_structural_elements)
+ * [Enter HTML5 structural elements](https://www.w3.org/wiki/HTML_structural_elements#Enter_HTML5_structural_elements)
+ * [HTML Element Reference](http://www.w3schools.com/tags/)
+ * [HTML Color Names](http://www.w3schools.com/tags/ref_colornames.asp)
 
-* [HTML Element Reference](http://www.w3schools.com/tags/)
-
-* [HTML Color Names](http://www.w3schools.com/tags/ref_colornames.asp)
+ * [CSS Reference](https://www.w3schools.com/cssref/default.asp)
