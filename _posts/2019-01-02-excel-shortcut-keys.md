@@ -57,7 +57,7 @@ tags: [excel, shortcut, 단축키]
 |---
 | *F12*{:.key} | 다른 이름으로 저장 | |
 
-## 참고링크
+## 참고 링크
 
  * [Microsoft Office - Windows용 Excel의 바로 가기 키](https://support.office.com/ko-kr/article/windows%EC%9A%A9-excel%EC%9D%98-%EB%B0%94%EB%A1%9C-%EA%B0%80%EA%B8%B0-%ED%82%A4-1798d9d5-842a-42b8-9c99-9b7213f0040f)
  * <https://www.officearticles.com/excel/microsoft_excel_shortcut_keys.htm>

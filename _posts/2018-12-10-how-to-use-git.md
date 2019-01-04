@@ -1,6 +1,7 @@
 ---
 layout: post
 title: git 사용법
+category: tool
 tags: [git, ssh]
 ---
 

@@ -18,7 +18,7 @@ tags: [font, 고정폭]
    * [D2 Coding (한글)](https://github.com/naver/d2codingfont)
    * [나눔고딕코딩 (한글)](https://github.com/naver/nanumfont)
 
-## 참고링크
+## 참고 링크
 
  * <https://en.wikipedia.org/wiki/Monospaced_font>
  * <https://en.wikipedia.org/wiki/List_of_monospaced_typefaces>
