@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll 관련 링크 모음
 category: jekyll
-tags: [jekyll]
+tags: [jekyll, emoji]
 ---
 
 ## Syntax Highlighting

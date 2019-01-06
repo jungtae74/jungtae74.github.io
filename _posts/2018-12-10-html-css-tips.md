@@ -53,4 +53,7 @@ tags: [html, css]
  * [HTML Element Reference](http://www.w3schools.com/tags/)
  * [HTML Color Names](http://www.w3schools.com/tags/ref_colornames.asp)
 
+### CSS 레퍼런스
+
  * [CSS Reference](https://www.w3schools.com/cssref/default.asp)
+ * [SASS/SCSS Basics](https://sass-lang.com/)
