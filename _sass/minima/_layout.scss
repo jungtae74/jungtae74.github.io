@@ -254,3 +254,43 @@
     }
   }
 }
+
+
+
+/**
+ * Pagination
+ */
+.pagination {
+  padding-top: 10px;
+  text-align: center;
+
+  a, span, em {
+    padding: 0 3px;
+  }
+
+  em {
+    font-weight: 600;
+  }
+
+  span {
+    color: #a0a0a0;
+  }
+}
+
+
+
+/**
+ * Content
+ */
+.content {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.author {
+  .date {
+    font-size: 14px;
+    color: #828282;
+  }
+}
