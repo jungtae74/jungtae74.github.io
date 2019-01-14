@@ -6,38 +6,48 @@ layout: default
 ---
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date: "%Y-%m-%d %r <em>%Z</em>" }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>{%
+<div class="post-preview">{%
+for post in paginator.posts %}
+  <article class="post-entry">
+    <div class="post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="post-label">
+      <span class="date">Posted on {{ post.date | date: "%Y-%m-%d" }}</span>
+    </div>
+    <div class="post-excerpt">
+      {{ post.excerpt | truncatewords: 1000 }}
+    </div>
+    <div class="read-more">
+      <a href="{{ post.url }}">Read more...</a>
+    </div>
+  </article>{%
 endfor %}
+</div>
 
 <!-- Pagination links -->{%
 if paginator.total_pages > 1 %}
 <div class="pagination">
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-  {% else %}
-  <span>Prev</span>
-  {% endif %}{%
+  <ul>{%
+  if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></li>{%
+  else %}
+    <li class="disable">Prev</li>{%
+  endif %}{%
   for page in (1..paginator.total_pages) %}{%
     if page == paginator.page %}
-
-  <em>{{ page }}</em>
-    {% elsif page == 1 %}
-  <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>{%
+    <li class="current">{{ page }}</li>{%
+    elsif page == 1 %}
+    <li><a href="/">{{ page }}</a></li>{%
     else %}
-  <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}{%
+    <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>{%
+    endif %}{%
   endfor %}{%
   if paginator.next_page %}
-  <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-  {% else %}
-  <span style="color: gray;">Next</span>
-  {% endif %}
+    <li><a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></li>{%
+  else %}
+    <li class="disable">Next</li>{%
+  endif %}
+  </ul>
 </div>{%
 endif %}

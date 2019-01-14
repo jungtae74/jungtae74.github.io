@@ -1,45 +1,50 @@
 ---
 ---
-#page-tags a, #page-categories a {
-  text-decoration: none;
-  display: inline-block;
-  background: rgba(106,159,181,0.15);
-  padding: 0 .2rem;
-  margin-right: .2rem;
-  border-radius: 4px;
-  color: #6a9fb5;
-  font-family: "PT Sans",Helvetica,Arial,sans-serif;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: 0.2s;
+#page-tags, #page-categories {
+  a {
+    text-decoration: none;
+    display: inline-block;
+    background: rgba(106,159,181,0.15);
+    padding: 0 .2rem;
+    margin-right: .2rem;
+    border-radius: 4px;
+    color: #6a9fb5;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: 0.2s;
+
+    &:hover {
+      color: #3187ab;
+      background: rgba(106,159,181,0.35);
+    }
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-left: 0.2rem;
+      padding-right: 0.4rem;
+    }
+  }
 }
 
-#page-tags a:hover, #page-categories a:hover {
-  color: #3187ab;
-  background: rgba(106,159,181,0.35);
-}
+#page-tags {
+  a {
+    font-size: 90%;
 
-#page-tags a:before, #page-categories a:before {
-  font-family: "Font Awesome 5 Free";
-  padding-left: 0.2rem;
-  padding-right: 0.4rem;
-}
-
-#page-tags a {
-  font-size: 90%;
-}
-
-#page-tags a:before {
-  content: "\f02b";
+    &:before {
+      content: "\f02b";
+    }
+  }
 }
 
 #page-categories {
   float: right;
   text-align: right;
-}
 
-#page-categories a:before {
-  content: "\f07c";
+  a:before {
+    content: "\f07c";
+  }
 }
 
 .key {
@@ -59,13 +64,15 @@
   margin-left: 35px;
 }
 
-table th, table td {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
+table {
+  th, td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 
-table td {
-  font-size: 0.9rem;
+  td {
+    font-size: 0.9rem;
+  }
 }
 
 p, .highlight {
@@ -81,4 +88,18 @@ pre {
 li {
   margin-top: 2px;
   margin-bottom: 4px;
+}
+
+.post-meta {
+  time {
+    font-style: italic;
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      font-style: normal;
+      content: "\f073";
+      padding: 0 0.2rem;
+    }
+  }
 }

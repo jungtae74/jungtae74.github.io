@@ -65,3 +65,6 @@ plugins:
 # Permalinks
 permalink: none
 
+# Post excerpts
+excerpt_separator: <!--excerpt-->
+
