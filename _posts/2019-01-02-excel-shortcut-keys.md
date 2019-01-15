@@ -5,7 +5,9 @@ category: excel
 tags: [excel, shortcut, 단축키]
 ---
 
-## 기능 키(F1 ~ F12)
+Excel 단축키 중에서 기능 키(F1 ~ F12)와 키능 키 조합(Ctrl, Alt, Shift)를 정리한다.
+
+<!--excerpt-->
 
 | 단축키(Shortcut) | 설명(Description) | 메뉴(Menu) |
 |---
