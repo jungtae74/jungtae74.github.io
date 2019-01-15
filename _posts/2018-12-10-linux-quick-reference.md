@@ -22,6 +22,8 @@ tags: [user, group, process, kill, nohup]
     $ groups
     ~~~
 
+<!--excerpt-->
+
 ## 프로세스 관리
 
  1. 백그라운드 실행

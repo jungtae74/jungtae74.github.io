@@ -27,6 +27,8 @@ tags: [html, css]
 
 * \<div\>가 \<span\> 보다 상위 집합으로 볼 수 있음
 
+<!--excerpt-->
+
 ### CSS 계층적 구조
 
 * Descendant Selector
@@ -38,14 +40,6 @@ tags: [html, css]
  : `>` 로 구분, `tag1` 아래에 포함된 `tag2`만 선택 (자식 태그만 선택, 계층 깊이를 주의해야 함)
 
 * 참고> [CSS Combinators](http://www.w3schools.com/css/css_combinators.asp)
-
-### 웹 아이콘 폰트
-
-* 링크1> [Font Awesome Icons (Free)](https://fontawesome.com/icons?d=gallery&m=free)
-  * [Cheatsheet](https://fontawesome.com/cheatsheet)
-  * [Font Awesome's Free CDN Link (HTML Tag)](https://fontawesome.com/start)
-
-* 링크2> [Bootstrap - Glyphicons](http://getbootstrap.com/components/#glyphicons)
 
 ### HTML 레퍼런스
 

@@ -16,11 +16,16 @@ for post in paginator.posts %}
       <span class="date">Posted on {{ post.date | date: "%Y-%m-%d" }}</span>
     </div>
     <div class="post-excerpt">
-      {{ post.excerpt | truncatewords: 1000 }}
+      {{ post.excerpt | truncatewords: 1000 }}{%
+    if post.excerpt == post.content %}
+    </div>{%
+    else %}
+      <p class="omit">. . .</p>
     </div>
     <div class="read-more">
       <a href="{{ post.url }}">Read more...</a>
-    </div>
+    </div>{%
+    endif %}
   </article>{%
 endfor %}
 </div>

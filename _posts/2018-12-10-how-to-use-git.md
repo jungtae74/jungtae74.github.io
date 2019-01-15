@@ -24,6 +24,8 @@ tags: [git, ssh]
 * `git reset HEAD^`
  : 최종 커밋 취소
 
+<!--excerpt-->
+
 ## 커밋 로그 보기
 
 * `git log --name-status -1`
