@@ -13,11 +13,10 @@ tags: [ubuntu, apt-get, wireless]
 sudo vi /etc/apt/sources.list
 ~~~
 
-* vi 에서 입력
-~~~
-:%s/archive.ubuntu.com/mirror.kakao.com/c
-~~~
-
+ * vi 에서 입력
+   ~~~
+   :%s/archive.ubuntu.com/mirror.kakao.com/gc
+   ~~~
 
 ## 시스템 업데이트
 
@@ -59,13 +58,13 @@ sudo iwlist {무선랜 장치명} scan
 sudo vi /etc/network/interfaces
 ~~~
 
-* **/etc/network/interfaces** 파일에 추가
-~~~
-auto {무선랜 장치명}
-iface {무선랜 장치명} inet dhcp
-        wpa-ssid "{ESSID: 무선네트워크명}"
-        wpa-psk "{비밀번호}"
-~~~
+ * **/etc/network/interfaces** 파일에 추가
+   ~~~
+   auto {무선랜 장치명}
+   iface {무선랜 장치명} inet dhcp
+           wpa-ssid "{ESSID: 무선네트워크명}"
+           wpa-psk "{비밀번호}"
+   ~~~
 
 ### STEP 6: 네트워크 재시작
 
@@ -79,7 +78,6 @@ sudo service networking restart
 ip addr
 ~~~
 
-
 ## 네트워크 설정으로 인한 부팅 지연 시 해결 방법
 
 부팅 시 네트워크 설정을 대기하지 않도록 설정
@@ -88,3 +86,12 @@ ip addr
 sudo systemctl disable systemd-networkd-wait-online.service
 sudo systemctl mask systemd-networkd-wait-online.service
 ~~~
+
+## 콘솔에서 타임존 변경
+
+패키지 추가 설치 없이 간단하게 콘솔에서 타임존 변경하는 방법 (Asia/Seoul(KST) 설정)
+
+~~~
+sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+~~~
+
