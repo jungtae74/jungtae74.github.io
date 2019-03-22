@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll 관련 링크 모음
 category: jekyll
-tags: [jekyll, emoji]
+tags: [markdown, emoji]
 ---
 
 ## Syntax Highlighting
@@ -26,3 +26,4 @@ tags: [jekyll, emoji]
 
  * [Dependency versions (GitHub Pages)](https://pages.github.com/versions/)
  * [Emoji cheat sheet for GitHub](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
+

@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 설치 팁
 categories: [linux]
-tags: [ubuntu, apt-get, wireless]
+tags: [apt-get, 무선랜]
 ---
 
 ## 업데이트 저장소 변경

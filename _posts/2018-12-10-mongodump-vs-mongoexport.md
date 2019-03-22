@@ -1,9 +1,10 @@
 ---
 layout: post
 title: mongodump 와 mongoexport 비교
-category: mongodb
+category: [mongodb, 데이터베이스]
 tags: [mongodb, mongodump, mongoexport]
 ---
+
 비슷한듯 다른 MongoDB Tools 비교
 
 |               | [mongodump] | [mongoexport] |
@@ -25,3 +26,4 @@ tags: [mongodb, mongodump, mongoexport]
 [skip]: https://docs.mongodb.com/manual/reference/program/mongoexport/#cmdoption--skip
 [limit]: https://docs.mongodb.com/manual/reference/program/mongoexport/#cmdoption--limit
 [sort]: https://docs.mongodb.com/manual/reference/program/mongoexport/#cmdoption--sort
+

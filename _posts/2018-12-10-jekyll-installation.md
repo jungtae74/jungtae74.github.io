@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll 설치 및 실행
 category: jekyll
-tags: [gem, jekyll, bundle]
+tags: [gem, bundle]
 ---
 
 ## 설치 요구 사항
@@ -104,3 +104,4 @@ tags: [gem, jekyll, bundle]
    ~~~
    $ sudo gem uninstall jekyll
    ~~~
+

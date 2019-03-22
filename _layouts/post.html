@@ -24,9 +24,11 @@ layout: default
     {{ content }}
   </div>
 
-  <div id="page-tags">
+  <div id="page-tags">{%
+    if page.tags.size > 0 %}
     <span>Tags:</span>{% for tag in page.tags %}
-    <a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>{% endfor %}
+    <a href="/tags/#{{ tag | cgi_escape }}">{{ tag }}</a>{% endfor %}{%
+    endif %}
   </div>
 
   {%- if site.disqus.shortname -%}
