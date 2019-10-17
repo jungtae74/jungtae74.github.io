@@ -73,6 +73,20 @@ tags: [gem, bundle]
     $ bundle update
     ~~~
 
+## Jekyll 업데이트
+
+ 1. GitHub 호스팅을 위한 패키지 업데이트
+    ~~~
+    $ sudo gem update github-pages
+    ~~~
+
+ 2. Blog 최신 설정으로 업데이트
+    ~~~
+    $ cd myblog
+
+    $ bundle update
+    ~~~
+
 ## Jekyll 정보
 
  * jekyll 버전 확인
